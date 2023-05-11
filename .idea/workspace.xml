@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0057a3c4-4e49-4d64-bc02-a8c1e97e0f00" name="Changes" comment="Cambios en el controller">
+    <list default="true" id="0057a3c4-4e49-4d64-bc02-a8c1e97e0f00" name="Changes" comment="Cambios en el controller, se actualizan las tablas">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/ShellSortController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/ShellSortController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ucr/lab/shellSort.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ucr/lab/shellSort.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ucr/lab/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ucr/lab/stylesheet.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/Complex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/Complex.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +136,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683766653278</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Cambios en el controller, se actualizan las tablas">
+      <created>1683770256937</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1683770256937</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -154,6 +160,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Interfaz completa" />
     <MESSAGE value="Cambios en el controller" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cambios en el controller" />
+    <MESSAGE value="Cambios en el controller, se actualizan las tablas" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cambios en el controller, se actualizan las tablas" />
   </component>
 </project>

@@ -5,6 +5,8 @@
  */
 package domain;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 
 /**
@@ -12,6 +14,44 @@ import java.util.Random;
  * @author Profesor Gilberth Chaves A <gchavesav@ucr.ac.cr>
  */
 public class Complex {
+
+    private List<Integer> gap1;
+    private List<Integer> gap2;
+    private List<Integer> gap3;
+    private List<Integer> gap4;
+
+    public int[] getGap1() {
+        int[] arr = new int[gap1.size()];
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = gap1.get(i);
+        }
+        return arr;
+    }
+
+    public int[] getGap2() {
+        int[] arr = new int[gap2.size()];
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = gap2.get(i);
+        }
+        return arr;
+    }
+
+    public int[] getGap3() {
+        int[] arr = new int[gap3.size()];
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = gap3.get(i);
+        }
+        return arr;
+    }
+
+    public int[] getGap4() {
+        int[] arr = new int[gap4.size()];
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = gap4.get(i);
+        }
+        return arr;
+    }
+
     public void quickSort(int arr[], int low, int high){
         int i=low;
         int j=high;
@@ -104,8 +144,12 @@ public class Complex {
     }
 
     public void shellSort(int a[]) { 
-        int n = a.length; 
-        // Start with a big gap, then reduce the gap 
+        int n = a.length;
+        gap1 = new ArrayList<>();
+        gap2 = new ArrayList<>();
+        gap3 = new ArrayList<>();
+        gap4 = new ArrayList<>();
+        // Start with a big gap, then reduce the gap
         for (int gap = n/2; gap > 0; gap /= 2){
                 // Do a gapped insertion sort for this gap size.
             // The first gap elements a[0..gap-1] are already 
@@ -113,6 +157,7 @@ public class Complex {
             // until the entire array is gap sorted
             int x=1;
             for (int i = gap; i < n; i += 1){
+                int xx = gap/2;
                 // add a[i] to the elements that have been gap
                 // sorted save a[i] in temp and make a hole at 
                 // position i 
@@ -126,9 +171,13 @@ public class Complex {
   
                 // put temp (the original a[i]) in its correct 
                 // location 
-                a[j] = temp; 
-            } 
-        } 
+                a[j] = temp;
+                if (gap == n/2) gap2.add(temp);
+                else if (gap == (n / 2) / 2) gap3.add(temp);
+                else if (gap == (((n / 2) / 2) / 2)) gap4.add(temp);
+            }
+            gap1.add(gap);
+        }
     }
 
 }

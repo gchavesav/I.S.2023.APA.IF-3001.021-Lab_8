@@ -1,5 +1,6 @@
 package controller;
 
+import domain.Complex;
 import javafx.beans.Observable;
 import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleObjectProperty;
@@ -13,6 +14,8 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 
 public class ShellSortController {
@@ -56,11 +59,19 @@ public class ShellSortController {
     void onActionRandomize(ActionEvent event) {
         util.Utility.fill(sortArray, 200);
         tblNoSortedArray.setItems(getData());
+        clear();
     }
 
     @FXML
     void onActionStart(ActionEvent event) {
-
+        clear();
+        Complex complex = new Complex();
+        complex.shellSort(sortArray);
+        txtGap1.setText(util.Utility.show(complex.getGap1(), 0, complex.getGap1().length));
+        txtGap2.setText(util.Utility.show(complex.getGap2(), 0, complex.getGap2().length));
+        txtGap3.setText(util.Utility.show(complex.getGap3(), 0, complex.getGap3().length));
+        txtGap4.setText(util.Utility.show(complex.getGap4(), 0, complex.getGap4().length));
+        tblSortedArray.setItems(getData());
     }
 
     private ObservableList getData() {
@@ -73,4 +84,11 @@ public class ShellSortController {
         return data;
     }
 
+    private void clear(){
+        txtGap1.clear();
+        txtGap2.clear();
+        txtGap3.clear();
+        txtGap4.clear();
+        tblSortedArray.getItems().clear();
+    }
 }
