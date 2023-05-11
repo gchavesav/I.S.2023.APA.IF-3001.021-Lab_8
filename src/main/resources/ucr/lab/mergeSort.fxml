@@ -11,59 +11,59 @@
 
 <BorderPane prefHeight="610.0" prefWidth="620.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.mergeSortController">
     <center>
-        <AnchorPane prefHeight="644.0" prefWidth="1019.0" style="-fx-background-color: #ece2c6;">
+        <AnchorPane prefHeight="651.0" prefWidth="956.0" style="-fx-background-color: #ece2c6;">
             <children>
-                <Pane layoutY="-1.0" prefHeight="88.0" prefWidth="951.0" style="-fx-background-color: lightblue;">
+                <Pane prefHeight="78.0" prefWidth="956.0" style="-fx-background-color: lightblue;">
                     <children>
-                        <Text layoutX="188.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Merge Sorting Algorithm">
+                        <Text layoutX="254.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Merge Sorting Algorithm">
                             <font>
-                                <Font name="Arial" size="48.0" />
+                                <Font name="Arial" size="45.0" />
                             </font>
                         </Text>
                     </children>
                 </Pane>
-                <Text layoutX="14.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No sorted array">
+                <Text layoutX="14.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No sorted array">
                     <font>
                         <Font name="Arial" size="18.0" />
                     </font>
                 </Text>
-                <TableView fx:id="tableViewNoSortedArray" layoutX="6.0" layoutY="120.0" prefHeight="66.0" prefWidth="944.0" />
-                <Pane layoutY="194.0" prefHeight="333.0" prefWidth="956.0" style="-fx-background-color: lightblue;">
+                <TableView fx:id="tableViewNoSortedArray" layoutX="6.0" layoutY="97.0" prefHeight="114.0" prefWidth="944.0" />
+                <Pane layoutY="218.0" prefHeight="388.0" prefWidth="956.0" style="-fx-background-color: lightblue;">
                     <children>
                         <Text layoutX="14.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Temp array">
                             <font>
                                 <Font name="Arial" size="18.0" />
                             </font>
                         </Text>
-                        <TableView fx:id="tableViewTempArray" layoutX="1.0" layoutY="24.0" prefHeight="66.0" prefWidth="956.0" />
-                        <Text layoutX="14.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Merge Sorted array">
+                        <TableView fx:id="tableViewTempArray" layoutX="1.0" layoutY="24.0" prefHeight="109.0" prefWidth="956.0" />
+                        <Text layoutX="14.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Merge Sorted array">
                             <font>
                                 <Font name="Arial" size="18.0" />
                             </font>
                         </Text>
-                        <Text layoutX="14.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Low">
+                        <Text layoutX="14.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Low">
                             <font>
                                 <Font name="Arial" size="18.0" />
                             </font>
                         </Text>
-                        <Text layoutX="12.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="High">
+                        <Text layoutX="12.0" layoutY="224.0" strokeType="OUTSIDE" strokeWidth="0.0" text="High">
                             <font>
                                 <Font name="Arial" size="18.0" />
                             </font>
                         </Text>
-                        <Text layoutX="12.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Recursive calls">
+                        <Text layoutX="12.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Recursive calls">
                             <font>
                                 <Font name="Arial" size="18.0" />
                             </font>
                         </Text>
-                        <TableView fx:id="tableViewRepeated" layoutX="1.0" layoutY="207.0" prefHeight="115.0" prefWidth="956.0" />
-                        <TextField fx:id="textFielLow" editable="false" layoutX="61.0" layoutY="115.0" prefHeight="25.0" prefWidth="535.0" />
-                        <TextField fx:id="textFieldHigh" editable="false" layoutX="61.0" layoutY="148.0" prefHeight="25.0" prefWidth="535.0" />
-                        <TextField fx:id="textFieldRecursiveCalls" editable="false" layoutX="154.0" layoutY="176.0" prefHeight="25.0" prefWidth="57.0" />
+                        <TableView fx:id="tableViewRepeated" layoutX="6.0" layoutY="258.0" prefHeight="122.0" prefWidth="947.0" />
+                        <TextField fx:id="textFielLow" editable="false" layoutX="61.0" layoutY="176.0" prefHeight="25.0" prefWidth="535.0" />
+                        <TextField fx:id="textFieldHigh" editable="false" layoutX="61.0" layoutY="203.0" prefHeight="25.0" prefWidth="535.0" />
+                        <TextField fx:id="textFieldRecursiveCalls" editable="false" layoutX="141.0" layoutY="228.0" prefHeight="25.0" prefWidth="57.0" />
                     </children>
                 </Pane>
-                <Button layoutX="302.0" layoutY="533.0" mnemonicParsing="false" onAction="#onActionStart" prefHeight="62.0" prefWidth="158.0" style="-fx-background-color: lightblue;" text="Start" />
-                <Button layoutX="593.0" layoutY="533.0" mnemonicParsing="false" onAction="#onActionRandomize" prefHeight="62.0" prefWidth="158.0" style="-fx-background-color: lightblue;" text="Randomize" />
+                <Button layoutX="196.0" layoutY="616.0" mnemonicParsing="false" onAction="#onActionStart" prefHeight="62.0" prefWidth="158.0" style="-fx-background-color: lightblue;" text="Start" />
+                <Button layoutX="548.0" layoutY="616.0" mnemonicParsing="false" onAction="#onActionRandomize" prefHeight="62.0" prefWidth="206.0" style="-fx-background-color: lightblue;" text="Randomize" />
             </children>
         </AnchorPane>
     </center>
