@@ -139,6 +139,13 @@ public class Utility {
         }
     }
 
+    public static void fill(int a[], int bound){
+        int n = a.length;
+        for (int i = 0; i < n; i++){
+            a[i] = random(bound);
+        }
+    }
+
     public static String show(int[] a, int bound) {
         String result = "";
         for (int i = 0; i < bound; i++) {
