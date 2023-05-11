@@ -42,27 +42,36 @@ public class mergeSortController {
             column.setCellValueFactory(data->new SimpleStringProperty(data.getValue().get(colIndex)));
             tableViewNoSortedArray.getColumns().add(column);
         }
-        tableViewNoSortedArray.setItems(getData());
+        tableViewNoSortedArray.setItems(getData(array));
         //ordenamos los datos
 
         complex.mergeSort(array,arrayTemp,0,199);
-        System.out.println(Arrays.toString(array));
 
-        //agregamos las columnas al
+
+        //agregamos las columnas al tableViewRepeated
         for (int i = 0; i < 200; i++) {
             final int colIndex = i;
             TableColumn<List<String>, String> column = new TableColumn<>(String.valueOf(i));
             column.setCellValueFactory(data->new SimpleStringProperty(data.getValue().get(colIndex)));
             tableViewRepeated.getColumns().add(column);
         }
-        tableViewRepeated.setItems(getData());
+        tableViewRepeated.setItems(getData(array));
+
+        //agregamos las columnas al tableViewTempArray
+        for (int i = 0; i < 200; i++) {
+            final int colIndex = i;
+            TableColumn<List<String>, String> column = new TableColumn<>(String.valueOf(i));
+            column.setCellValueFactory(data->new SimpleStringProperty(data.getValue().get(colIndex)));
+            tableViewTempArray.getColumns().add(column);
+        }
+        tableViewTempArray.setItems(getData(arrayTemp));
     }
 
-    private ObservableList getData() {
+    private ObservableList getData(int a[]) {
         ObservableList<List<String>> data = FXCollections.observableArrayList();
         List<String> arrayList = new ArrayList<>();
-        for (int i = 0; i < array.length; i++) {
-            arrayList.add(String.valueOf(array[i]));
+        for (int i = 0; i < a.length; i++) {
+            arrayList.add(String.valueOf(a[i]));
         }
         data.add(arrayList);
         return data;
@@ -75,7 +84,7 @@ public class mergeSortController {
 
     @FXML
     void onActionStart(ActionEvent event) {
-        util.Utility.fill(array);
-        tableViewNoSortedArray.setItems(getData());
+        //util.Utility.fill(array);
+        //tableViewNoSortedArray.setItems(getData(array));
     }
 }
