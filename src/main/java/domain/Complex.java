@@ -12,24 +12,38 @@ import java.util.Random;
  * @author Profesor Gilberth Chaves A <gchavesav@ucr.ac.cr>
  */
 public class Complex {
-    private int counterRadix[];
+    private int contador ;
+    private String highs = "";
+    private String lows = "";
+    private String pivots = "";
+    private int[] counterRadix;
+
     public void quickSort(int arr[], int low, int high){
         int i=low;
         int j=high;
         int pivot=arr[(low+high)/2];
+        pivots += pivot + " ";
         do{
             while(arr[i]<pivot) i++;
             while(arr[j]>pivot) j--;
-                if(i<=j){
-                    int aux=arr[i];
-                    arr[i]=arr[j];
-                    arr[j]=aux;
-                    i++;j--;
-                }//if
+            if (arr[j]>=0) highs += arr[j] + " ";
+            if(i<=j){
+                int aux=arr[i];
+                arr[i]=arr[j];
+                arr[j]=aux;
+                i++;j--;
+            }//if
         }while(i<=j);//do
 
-        if(low<j) quickSort(arr,low,j);
-        if(i<high) quickSort(arr,i,high);
+        if (low < j) {
+            quickSort(arr, low, j);
+            contador++;
+        }
+        if (i < high) {
+            quickSort(arr, i, high);
+            contador++;
+        }
+        lows += arr[i] + " ";
     }
 
     public void radixSort(int a[], int n){ 
@@ -137,5 +151,38 @@ public class Complex {
             } 
         } 
     }
+    public String getPivots() {
+        return pivots;
+    }
 
+    public void setPivots(String pivots) {
+        this.pivots = pivots;
+    }
+
+
+
+    public String getHigh() {
+        return highs;
+    }
+
+    public void setHigh(String high) {
+        this.highs = high;
+    }
+
+
+    public String getLows() {
+        return lows;
+    }
+
+    public void setLows(String lows) {
+        this.lows = lows;
+    }
+
+    public void setContador(int contador) {
+        this.contador = contador;
+    }
+
+    public int getContador() {
+        return contador;
+    }
 }
