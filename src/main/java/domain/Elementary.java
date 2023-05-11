@@ -10,6 +10,12 @@ package domain;
  * @author Profesor Lic. Gilberth Chaves A.
  */
 public class Elementary {
+    private int itCounter;
+
+    public int getItCounter() {
+        return itCounter;
+    }
+
     public void bubbleSort(int a[]){
         for(int i=1;i<a.length;i++)
             for(int j=0;j<a.length-i;j++){
@@ -18,6 +24,7 @@ public class Elementary {
                     a[j]=a[j+1];
                     a[j+1]=aux;
                 }//if
+                itCounter++;
             }//for j
     }
     
