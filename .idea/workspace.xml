@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0057a3c4-4e49-4d64-bc02-a8c1e97e0f00" name="Changes" comment="">
+    <list default="true" id="0057a3c4-4e49-4d64-bc02-a8c1e97e0f00" name="Changes" comment="-notSortedTableView">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/CountingSortController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/CountingSortController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/domain/Elementary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/Elementary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ucr/lab/countingSort.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ucr/lab/countingSort.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +28,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="SET_USER_NAME_GLOBALLY" value="false" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -140,6 +139,14 @@
       <option name="presentableId" value="Default" />
       <updated>1683760389140</updated>
     </task>
+    <task id="LOCAL-00001" summary="-notSortedTableView">
+      <created>1683770732330</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1683770732330</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -167,6 +174,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="-Interfaz" />
-    <option name="LAST_COMMIT_MESSAGE" value="-Interfaz" />
+    <MESSAGE value="-notSortedTableView" />
+    <option name="LAST_COMMIT_MESSAGE" value="-notSortedTableView" />
   </component>
 </project>
