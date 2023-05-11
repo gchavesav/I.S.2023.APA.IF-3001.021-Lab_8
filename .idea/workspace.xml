@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0057a3c4-4e49-4d64-bc02-a8c1e97e0f00" name="Changes" comment="">
+    <list default="true" id="0057a3c4-4e49-4d64-bc02-a8c1e97e0f00" name="Changes" comment="quickSort.fxml">
       <change afterPath="$PROJECT_DIR$/src/main/resources/ucr/lab/bubbleSort.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/ucr/lab/quickSort.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/domain/ElementaryTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/domain/Elementary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/Elementary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/QuickSortController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/QuickSortController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/util/Utility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/Utility.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -107,8 +105,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1683760389140</updated>
-      <workItem from="1683761019037" duration="5244000" />
+      <workItem from="1683761019037" duration="7227000" />
     </task>
+    <task id="LOCAL-00001" summary="quickSort.fxml">
+      <created>1683766576045</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1683766576045</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,5 +130,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="quickSort.fxml" />
+    <option name="LAST_COMMIT_MESSAGE" value="quickSort.fxml" />
   </component>
 </project>
