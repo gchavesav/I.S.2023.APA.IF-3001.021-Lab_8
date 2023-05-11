@@ -1,5 +1,6 @@
 package controller;
 
+import domain.Complex;
 import domain.Elementary;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.collections.FXCollections;
@@ -19,14 +20,15 @@ public class RadixSortController {
 
     @FXML
     private TableView noSortedTableView;
-
+private Complex complex;
     @FXML
     private TableView sortedTableView;
     private int  a[]= new int [200];
 
+
     @FXML
     public void initialize() {
-
+ complex=new Complex();
         util.Utility.fill(a,99);
         System.out.println(util.Utility.show(a,200));
         //agregamos las columnas al tableview
@@ -67,6 +69,8 @@ public class RadixSortController {
     @FXML
     void startOnAction(ActionEvent event) {
 
+complex.radixSort(a,200);
+sortedTableView.setItems(getData());
 
     }
 
