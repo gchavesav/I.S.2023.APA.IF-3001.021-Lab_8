@@ -12,8 +12,14 @@ package domain;
 public class Elementary {
     private int itCounter;
 
+    private int [] counterArray;
+
     public int getItCounter() {
         return itCounter;
+    }
+
+    public int[] getCounterArray() {
+        return counterArray;
     }
 
     public void bubbleSort(int a[]){
@@ -61,17 +67,17 @@ public class Elementary {
     public void countingSort(int a[]) {
         int max = util.Utility.maxArray(a); //va de 0 hasta el elemento maximo
         // create buckets
-        int counter[] = new int[max + 1];
+        counterArray = new int[max + 1];
         // fill buckets
         for (int element : a) {
-            counter[element]++; //incrementa el num de ocurrencias del elemento
+            counterArray[element]++; //incrementa el num de ocurrencias del elemento
         }
         // sort array
         int index = 0;
-        for (int i = 0; i < counter.length; i++) {
-            while (counter[i]>0) { //significa q al menos hay un elemento (q existe)
+        for (int i = 0; i < counterArray.length; i++) {
+            while (counterArray[i]>0) { //significa q al menos hay un elemento (q existe)
                 a[index++] = i;
-                counter[i]--;
+                counterArray[i]--;
             }
         }//for i
     }

@@ -22,7 +22,7 @@ public class CountingSortController
 
     private Elementary elementaryArray;
 
-    private int a[];
+    private int a[] = new int [200];
 
     @javafx.fxml.FXML
     public void initialize() {
@@ -31,7 +31,12 @@ public class CountingSortController
             TableColumn<List<String>, String> column = new TableColumn<>(""+(i));
             column.setCellValueFactory(data->new SimpleStringProperty(data.getValue().get(colIndex)));
             notSortedTableView.getColumns().add(column);
+            /*counterTableView.getColumns().add(column);
+            countingSortedTableView.getColumns().add(column);*/
         }
+
+
+
     }
 
     public ObservableList<List<String>> getData() {
@@ -40,12 +45,21 @@ public class CountingSortController
         for (int i = 0; i < a.length; i++) {
             info.add(String.valueOf(a[i]));
         }
+        data.add(info);
         return data;
     }
-    public void randomizeOnAction(ActionEvent actionEvent) {
 
+
+    public void randomizeOnAction(ActionEvent actionEvent) {
+        util.Utility.fill(a,99);
+        notSortedTableView.setItems(getData());
     }
 
     public void startOnAction(ActionEvent actionEvent) {
+        int []o = elementaryArray.getCounterArray();
+       elementaryArray.countingSort(a);
+
+
+
     }
 }
