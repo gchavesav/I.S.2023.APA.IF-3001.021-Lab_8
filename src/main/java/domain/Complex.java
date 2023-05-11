@@ -12,6 +12,7 @@ import java.util.Random;
  * @author Profesor Gilberth Chaves A <gchavesav@ucr.ac.cr>
  */
 public class Complex {
+    private int counterRadix[];
     public void quickSort(int arr[], int low, int high){
         int i=low;
         int j=high;
@@ -41,9 +42,13 @@ public class Complex {
         for (int exp = 1; m/exp > 0; exp *= 10) 
             countSort(a, n, exp); 
     }
-    
-    
-    // A function to do counting sort of a[] according to 
+
+
+    public int[] getCounterRadix() {
+        return counterRadix;
+    }
+
+    // A function to do counting sort of a[] according to
     // the digit represented by exp. 
     private void countSort(int a[], int n, int exp){ 
         int output[] = new int[n]; // output array 
@@ -70,7 +75,9 @@ public class Complex {
         // Copy the output array to a[], so that a[] now 
         // contains sorted numbers according to curent digit 
         for (i = 0; i < n; i++) 
-            a[i] = output[i]; 
+            a[i] = output[i];
+
+        counterRadix=count;
     }
     
     public void mergeSort(int a[], int tmp[], int low, int high){
