@@ -132,16 +132,16 @@ public class Utility {
         return max;
     }
 
-    public static void fill(int a[]){
+    public static void fill(int a[], int bound){
         int n = a.length;
         for (int i = 0; i < n; i++){
-            a[i] = random(99);
+            a[i] = random(bound);
         }
     }
 
-    public static String show(int[] a, int bound) {
+    public static String show(int[] a, int low, int high) {
         String result = "";
-        for (int i = 0; i < bound; i++) {
+        for (int i = low; i < high; i++) {
             result += a[i] + ", ";
 
         }
