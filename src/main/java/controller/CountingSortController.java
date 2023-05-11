@@ -41,6 +41,7 @@ public class CountingSortController
             TableColumn<List<String>, String> column = new TableColumn<>(""+(i));
             column.setCellValueFactory(data->new SimpleStringProperty(data.getValue().get(colIndex)));
             counterTableView.getColumns().add(column);
+
         }
         for (int i = 0; i < 200; i++) {
             final int colIndex = i;
@@ -92,7 +93,6 @@ public class CountingSortController
 
     public void startOnAction(ActionEvent actionEvent) {
         elementaryArray.countingSort(a);
-
         countingSortedTableView.setItems(getData());
         counter = elementaryArray.getCounterArray();
         counterTableView.setItems(getDataCounter());

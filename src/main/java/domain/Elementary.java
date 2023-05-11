@@ -12,7 +12,7 @@ package domain;
 public class Elementary {
     private int itCounter;
 
-    private int [] counterArray;
+    private int counterArray[];
 
     public int getItCounter() {
         return itCounter;
@@ -67,19 +67,23 @@ public class Elementary {
     public void countingSort(int a[]) {
         int max = util.Utility.maxArray(a); //va de 0 hasta el elemento maximo
         // create buckets
-        counterArray = new int[max + 1];
+        int [] counter = new int[max + 1];
+        this.counterArray = new int[max + 1];
         // fill buckets
         for (int element : a) {
-            counterArray[element]++; //incrementa el num de ocurrencias del elemento
+            counter[element]++; //incrementa el num de ocurrencias del elemento
         }
+
         // sort array
         int index = 0;
-        for (int i = 0; i < counterArray.length; i++) {
-            while (counterArray[i]>0) { //significa q al menos hay un elemento (q existe)
+        for (int i = 0; i < counter.length; i++) {
+            this.counterArray[i] = counter[i];//Add the value of counter into counterArray
+            while (counter[i]>0) { //significa q al menos hay un elemento (q existe)
                 a[index++] = i;
-                counterArray[i]--;
+                counter[i]--;
             }
         }//for i
+
     }
 
 }
