@@ -57,8 +57,8 @@
                             </font>
                         </Text>
                         <TableView fx:id="tableViewRepeated" layoutX="6.0" layoutY="258.0" prefHeight="122.0" prefWidth="947.0" />
-                        <TextField fx:id="textFielLow" editable="false" layoutX="61.0" layoutY="176.0" prefHeight="25.0" prefWidth="535.0" />
-                        <TextField fx:id="textFieldHigh" editable="false" layoutX="61.0" layoutY="203.0" prefHeight="25.0" prefWidth="535.0" />
+                        <TextField fx:id="textFielLow" editable="false" layoutX="61.0" layoutY="176.0" prefHeight="25.0" prefWidth="850.0" />
+                        <TextField fx:id="textFieldHigh" editable="false" layoutX="61.0" layoutY="203.0" prefHeight="25.0" prefWidth="848.0" />
                         <TextField fx:id="textFieldRecursiveCalls" editable="false" layoutX="141.0" layoutY="228.0" prefHeight="25.0" prefWidth="57.0" />
                     </children>
                 </Pane>
